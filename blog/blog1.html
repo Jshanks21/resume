@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Articles &amp; Blog</title>
+  <title>Solidity vs Vyper</title>
 
   <!-- Bootstrap core CSS -->
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,7 +29,7 @@
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none">Blog</span>
       <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="../img/profile.jpg" alt="">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="../img/Ethereum.jpg" alt="">
       </span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,9 +53,9 @@
           <a class="nav-link js-scroll-trigger" href="#awards">Other Websites</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="../index.html">Back</a>
+          <a class="nav-link js-scroll-trigger" href="post.html">Back</a>
         </li>
-        
+
       </ul>
     </div>
   </nav>
@@ -64,13 +64,58 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="home">
       <div class="w-100">
-        <h1 class="mb-0">Articles &amp;
-          <span class="text-primary">Blog</span>
+        <h1 class="mb-0">Solidity vs
+          <span class="text-primary">Vyper</span>
         </h1>
-        <div class="subheading mb-5">Past Articles, Stories, &amp; Blog Posts · By Luis Egea · 
+        <div class="subheading mb-5">Purpose Through Language · By Luis Egea ·
           <a href="mailto:alphasearchseo@gmail.com">alphasearchseo@gmail.com</a>
         </div>
-        <p class="lead mb-5">Fill mew in...</p>
+
+        <p class="lead mb-3">Centralized technology companies like Apple, Amazon, Facebook, and Google have greatly outpaced open protocols on the internet. As a result, most users interact with each other and the internet through these intermediaries. This has led to these companies controlling the data and communication of their users within centralized infrastructures.</p>
+
+        <p class="lead mb-3">This centralization of internet services has created challenging problems for internet users. A few include massive data breaches, decreased user privacy, and a lack of control over the information and content consumed.</p>
+
+        <p class="lead mb-3">Ethereum is a globally decentralized, peer-to-peer, internet infrastructure. It aims to restore ownership of data and communication to users of the platform, while eliminating control of centralized companies.</p>
+
+        <p class="lead mb-5">In order to facilitate this decentralized infrastructure, Ethereum uses “smart contracts.” These smart contracts are most often written in the Solidity programming language.</p>
+
+        <h2 class="mb-5">Enter Solidity</h2>
+
+        <p class="lead mb-3">Solidity is popularly used on the Ethereum blockchain and was inspired by the C++, Python, and JavaScript programming languages.</p>
+
+        <p class="lead mb-3">According to the <a href="https://solidity.readthedocs.io/en/v0.6.1/" target="_blank">documentation</a>, “Solidity is an object-oriented, high-level language for implementing smart contracts.”</p>
+
+        <p class="lead mb-3">Solidity allows developers to define data types and functions within self-contained programs called smart contracts. These smart contracts are like classes found in other object-oriented programming languages. However, smart contracts built on the Ethereum network can execute code outside the control of an external authority.</p>
+
+        <p class="lead mb-3">Solidity shares many features found in other object-oriented programming languages. How these features are implemented differ, however, to effectively implement logic on the blockchain.</p>
+
+        <p class="lead mb-2">Three key features supported in Solidity as an object-oriented programming language are listed below:</p>
+        <ul>
+          <li>Encapsulation</li>
+          <li>Inheritance</li>
+          <li>Polymorphism</li>
+        </ul>
+        <p class="lead mb-3">Encapsulation allows smart contracts to be built like classes in other programming languages. Data types and methods within classes are defined by the developer. Similarly, the data types and functions in a smart contract are also defined by the developer. As a result, smart contracts act as self-contained components that can be deployed as separate instances on the blockchain.</p>
+
+        <p class="lead mb-3">Inheritance allows smart contracts to inherit data types and functions from other smart contracts. This mirrors the parent-child inheritance relationship seen in single inheritance structures found in other object-oriented programming languages. Multi-level, multiple, and hierarchical inheritance are also supported in Solidity.</p>
+
+        <p class="lead mb-3">This offers some flexibility and modularity, as one smart contract does not have to contain every data type or function that is called. This allows for the implementation of upgradable smart contracts.</p>
+
+        <p class="lead mb-3">A core feature of blockchain, including the Ethereum blockchain, is immutability. Once deployed onto the blockchain, data cannot be altered or removed by an external authority. As a result, smart contracts cannot be modified after they are deployed. However, developers can “upgrade” their smart contracts through inheritance.</p>
+
+        <p class="lead mb-3">Polymorphism facilitates this by allowing users to interact with different child contract instances and still derive the expected values held by the parent contract.</p>
+
+        <p class="lead mb-3">Each child contract can have unique functionality, but they also share inherited functionality from the parent contract. This means users can call on the shared functionality from a child contract instance without knowing the state or address of the parent contract.</p>
+
+        <p class="lead mb-3">Combining these features allows us to upgrade smart contracts by deploying new child contracts with upgraded functionality that inherit from the same parent contract as the previous child contracts. The parent contract can store necessary data, and a second child, with a known address, can redirect calls to the newly deployed child contract that has been upgraded.</p>
+
+        <p class="lead mb-3">The diagram below displays how these contracts could be organized.</p>
+
+          <img class="img-fluid mx-auto mb-2" src="../img/HierInheritance.jpg" alt="">
+        <div>Hierarchical Inheritance. Digital Image. Medium. 12 June 2018 <a href="https://medium.com/coinmonks/solidity-and-object-oriented-programming-oop-191f8deb831" target="_blank">link</a>.</div>
+
+        <p class="lead mb-3"> </p>
+
         <div class="social-icons">
           <a href="www.linkedin.com/in/luis-egea" target="_blank">
             <i class="fab fa-linkedin-in"></i>
@@ -85,17 +130,17 @@
       </div>
     </section>
 
-    <hr class="m-0">    
+    <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="articles">
       <div class="w-100">
         <h2 class="mb-5">Past Articles</h2>
 
         <div class="subheading text-body mb-3">Quantum Computers: <small>Minimizing Technology to Maximize Productivity</small></div>
-        
+
 
         <div class="subheading text-body mb-3">Increasing Awareness of CASA in Kansas</div>
-        
+
       </div>
     </section>
 
@@ -130,7 +175,7 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
       <div class="w-100">
-        <h2 class="mb-5">Interests</h2>
+        <h2 class="mb-5">About the Author</h2>
         <p>I'm constantly learning more about the latest blockchain developments and technologies. When I do make time, I like to participate in a weekend discussion group that ranges in topics. Depending on the attendees discussions have included world &amp; local politics, finance, medicine science, computer security, and business. I enjoy attending local developer meetups at PunchCode and presenting new projects on their Demo Day event.</p>
         <p class="mb-0">I enjoy traveling and learning about new cultures. I've had the opportunity to learn a lot about Chinese culture during my time as a VIPKid teacher, where I taught Chinese kids online. My father is from Spain, so I speak Spanish, but I would like to visit in order to solidify my fluency as I don't practice it often.</p>
       </div>
