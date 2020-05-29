@@ -45,13 +45,10 @@
           <a class="nav-link js-scroll-trigger" href="#articles">Past Articles</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#blog">Blog &amp; Stories</a>
+          <a class="nav-link js-scroll-trigger" href="#about">About the Author</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#interests">About the Author</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Other Websites</a>
+          <a class="nav-link js-scroll-trigger" href="#websites">Other Websites</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="post.html">Back</a>
@@ -60,7 +57,6 @@
       </ul>
     </div>
   </nav>
-
 
   <div class="container-fluid p-0">
 
@@ -90,6 +86,7 @@
         <p class="lead mb-5">In order to carry out the instructions of these projects over this decentralized network, Ethereum uses smart contracts. These smart contracts have traditionally been written in the Solidity programming language.</p>
 
         <h2 class="mb-5">Enter Solidity</h2>
+        <img class="img-fluid float-right" src="../img/solidity-logo.png" alt="Solidity Logo">
 
         <p class="lead mb-4">Solidity is popularly used on the Ethereum blockchain and was inspired by the C++, Python, and JavaScript programming languages.</p>
 
@@ -138,7 +135,7 @@
 
         <p class="lead mb-5">Though still in beta, Vyper aims to increase smart contract security and reduce the chance of writing misleading code. As a result, its range of features will be limited compared to those in Solidity.</p>
 
-        <h2 class="mb-5">Vyper:<small> Because We All Make Mistakes</small></h2>
+        <h2 class="mb-5">Vyper:<small> Because We All Make Mistakes</small><img class="img-fluid float-right" src="../img/vyper-logo.jpg" alt="Vyper Logo"></h2>
 
         <p class="lead mb-4">Vyper focuses on smart contract security, auditability, and simplicity.</p>
 
@@ -169,7 +166,7 @@
 
         <p class="lead mb-5">By removing them, it's still possible to create a fully-fledged smart contract. However, what you can do is severely limited. The idea being that you're less likely to create a bug because the code is easier to audit, since it's more readable, and you have less opportunity to mess up - not that you would of course - because you're so limited in what you can do. You're basically trading flexibility with security.</p>
 
-        <h2 class="mb-5">How Is a Vyper Is Different Than a Python?</h2>
+        <h2 class="mb-5">Vyper &amp; Python</h2>
 
         <p class="lead mb-4">As stated in its documentation, Vyper is most heavily influenced by Python. This is visible in its syntax.</p>
 
@@ -199,20 +196,14 @@
 
         <p class="lead mb-4">Vyper gives extra assurance that these bad things don't happen by limiting what smart contracts can do to reduce human error when reading and writing code. See, totally a feature.</p>
 
-<!-- Left off here -->
-        <p class="lead mb-4">Vyper focuses on increased security and readability through a minimalist approach. While Solidity offers more robustness, Vyper aims for simplicity.</p>
+        <h2 class="mb-5">Vyper's Utility Belt</h2>
 
-        <p class="lead mb-4">This is in response to the immutable nature of smart contracts on the blockchain. While it is possible to create upgradable smart contracts in Solidity to fix errors, this is not a reasonable expectation in every case.</p>
+        <p class="lead mb-4">Vyper's goal of increased simplicity for maximum readability make its features as a language unique compared to both Python and Solidity. It's easy to see Vyper as a restrictive language if you're trying to do something new and untested with your smart contract. But if you're just trying to help a business take advantage of the Ethereum blockchain in the most secure way possible, it's a great option. It's kind of like bowling with the side bumpers up so you don't immediately throw a gutter ball at the start of the game.</p>
 
-        <p class="lead mb-4">Also, smart contracts often handle large sums of financial assets, so small mistakes can still be critical ones. Since the blockchain is immutable, there is no easy way to correct these errors after deployment. </p>
-
-        <p class="lead mb-5">Therefore, Vyper limits the tools available to developers to reduce the frequency of these errors.</p>
-
-
-
+        <p class="lead mb-4">With that in mind, the features listed below are implemented in Vyper to achieve the goals of security, auditability, and simplicity.</p>
 
         <div class="container">
-          <p class="lead pb-3 pt-3">However, Vyper <u><b>does</b></u> support the following features: </p>
+          <p class="lead pb-3 pt-3">Features Vyper supports: </p>
           <ul>
             <li>bounds and overflow checking</li>
             <li>support for signed integers and decimal fixed point numbers</li>
@@ -223,19 +214,28 @@
           </ul>
         </div>
 
-        <p class="lead mt-5 mb-4">Is Ethereum trading Solidity out for Vyper? What are the differences between these two programming languages? Why add a new language at all? Ethereum's Solidity vs Vyper debate has led to many questions about the future of the platform. Fortunately, we have the answers!</p>
+        <p class="lead pt-3 mb-4">Most of these features will restrict developers if Vyper determines that it risks security. But these limits give the opportunity to create tighter and more straightforward code. Understanding what a smart contract written in Vyper can do won't take the same amount of time as one written in Solidity because it's goals are specific and lean.</p>
 
-        <p class="lead mb-4">First of all, Vyper will not replace Solidity. Vyper aims to improve smart contract security. But, as a result, it lacks the robustness of Solidity. This exchange makes each language better suited for different use cases.</p>
+        <p class="lead mb-4"> Vyper gives you more secure and human-readable smart contracts, handling the extremely sensitive aspects of your project. While Solidity gives developers the opportunity to push the limits of what their smart contracts can do on the blockchain. By combining them, you can better secure sensitive information while still doing some interesting things in a different part of your application.</p>
 
-        <p class="lead mb-4">Before diving into the pros and cons of these languages, it'll help to understand the purpose of Ethereum as a whole.</p>
+        <h2 class="mb-5">Conclusion</h2>
+
+        <p class="lead mt-5 mb-4">So is Ethereum trading Solidity out for Vyper? As the documentation suggests:</p>
+
+        <div class="container">
+          <blockquote class="blockquote">
+            <p>“Vyper does not strive to be a 100% replacement for everything that can be done in Solidity; it will deliberately forbid things or make things harder if it deems fit to do so for the goal of increasing security.”</p>
+            <footer class="blockquote-footer"><a href="https://vyper.readthedocs.io/en/latest/" target="_blank">Vyper Documentation</a></footer>
+          </blockquote>
+        </div>
 
         <p class="lead mb-4">Ethereum has grown exponentially since its start in 2015. Its use case has also evolved since then. From the ICO boom of 2017 to the current growth of DeFi, Ethereum continues to expand.</p>
 
-        <p class="lead mb-4">However, this soaring expansion also comes with increased threats to security. The biggest threat to security is the potential for human error. As the DAO hack of 2016 showed us, there is a lot at stake when mistakes are made.</p>
+        <p class="lead mb-4">However, this soaring expansion also comes with increased threats to security. The biggest threat to security is the potential for human error. As the <a href="https://en.wikipedia.org/wiki/The_DAO_(organization)" target="_blank"> DAO hack of 2016</a> showed us, there is a lot at stake when mistakes are made.</p>
 
-        <p class="lead mb-4">Writing code has always required mistakes in order to learn what works and doesn't work. That model doesn't work well with millions of dollars on the line though. It's impossible to stop people from making mistakes, but it is possible to limit those mistakes by reducing the number of ways they can be made.</p>
+        <p class="lead mb-4">Writing code has always required mistakes in order to learn what works and doesn't work. That model doesn't work well with millions of dollars on the line though. It's impossible to stop people from making mistakes, but it is possible to limit those mistakes by reducing the number of ways they can be made. By identifying the roles of each language and the importance of security in your project, you can better secure your users from these risks.</p>
 
-        <p class="lead mb-4"></p>
+        <p class="lead mb-4">It's also important to realize these are still the early days for smart contract development. There will be more "growing pains" as new projects give users new ways to deploy and allocate their programmable money. Vyper is an early example to improve the current state of smart contract development, but there will surely be more as we continue to buidl the future of decentralized finance.</p>
 
         <div class="social-icons">
           <a href="www.linkedin.com/in/luis-egea" target="_blank">
@@ -255,64 +255,49 @@
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="articles">
       <div class="w-100">
-        <h2 class="mb-5">Past Articles</h2>
+        <h2 class="mb-5">Past Articles &amp; Research</h2>
+        <div class="subheading mb-5">Unrelated to Crypto and Blockchain:</div>
 
-        <div class="subheading text-body mb-4">Quantum Computers: <small>Minimizing Technology to Maximize Productivity</small></div>
+        <div class="subheading text-body mb-4"><a href="https://drive.google.com/file/d/1XTotttEijKdGdouALQRRhUHaJpMhIRTT/view?usp=sharing" target="_blank">Quantum Computers: <small>Minimizing Technology to Maximize Productivity</small></a></div>
 
 
-        <div class="subheading text-body mb-4">Increasing Awareness of CASA in Kansas</div>
-
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="blog">
-      <div class="w-100">
-        <h2 class="mb-5">Blog &amp; Stories</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <a href="https://jshanks21.github.io/Get_Eth_Balance/" target="_blank"><h3 class="mb-0">Ethereum Balance Lookup Tool</h3></a>
-            <div class="subheading mb-4">What's in Your Wallet?</div>
-            <img class="img-fluid mx-auto mb-2" src="../img/portfolio.jpg" alt="">
-            <div>Project Description: This is a simple Ethereum balance checker. More to come soon. Check it out with this <a href="https://jshanks21.github.io/Get_Eth_Balance/" target="_blank">link</a>.</div>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">My (soon-to-be) Awesome Blockchain Project</h3>
-            <div class="subheading mb-4">Project Tagline</div>
-            <img class="img-fluid mx-auto mb-2" src="../img/portfolio.jpg" alt="">
-            <div>Project Description: This is the most amazing blockchain project ever. Check it out with this <a href="" target="_blank">link</a>.</div>
-          </div>
-        </div>
+        <div class="subheading text-body mb-4"><a href="https://drive.google.com/file/d/1HkH-hc7kCtaVg59eDp6XwmAqOyfOGDHX/view?usp=sharing" target="_blank">Increasing Awareness of CASA in Kansas</a></div>
 
       </div>
     </section>
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="w-100">
         <h2 class="mb-5">About the Author</h2>
-        <p>I'm constantly learning more about the latest blockchain developments and technologies. When I do make time, I like to participate in a weekend discussion group that ranges in topics. Depending on the attendees discussions have included world &amp; local politics, finance, medicine science, computer security, and business. I enjoy attending local developer meetups at PunchCode and presenting new projects on their Demo Day event.</p>
-        <p class="mb-0">I enjoy traveling and learning about new cultures. I've had the opportunity to learn a lot about Chinese culture during my time as a VIPKid teacher, where I taught Chinese kids online. My father is from Spain, so I speak Spanish, but I would like to visit in order to solidify my fluency as I don't practice it often.</p>
+        <p>My name is Luis and I made a pledge to be one of the one million devs when I first heard about the <a href="https://onemilliondevs.com/" target="_blank"> announcement in the fall of 2018</a>. I’ve been actively following the crypto industry since I first heard about Bitcoin during the 2017 bull run. But it wasn’t until 2019 that I decided to go all in and help buidl the potential future crypto promises.</p>
+
+        <p>I’ve been recording my coding journey on the <a href="https://forum.openzeppelin.com/t/my-coding-journey-beginner-to-pro/2390" target="_blank">OpenZeppelin forum</a> and on my <a href="https://twitter.com/LuisEgeaWin" target="_blank">Twitter</a>. I’ve also been building this site to display some of my projects and past articles. As well as practice more front-end programming. I’m currently adding more projects and articles I have saved locally but haven’t deployed or published yet.</p>
+
+        <p class="mb-0">I’m rather obsessed with crypto. The potential of this technology and the current opportunities in the industry literally keep me up at night. But weirdly, I’m not tired the next day because being a part of this industry energizes me more than any other work or community ever has before. I’m so grateful that I happened across that first fb post that started me down this rabbit hole in 2017. I only wish I had learned about this industry sooner so I could’ve started this journey earlier.</p>
       </div>
     </section>
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="websites">
       <div class="w-100">
         <h2 class="mb-5">My Other Sites</h2>
-          <h3 class="mb-4"><a href="https://ezteachonline.com/" target="_blank">EZ Teach Online</a></h3>
-            <p>What is it?</p>
           <h3 class="mb-4"><a href="https://howtoclaim.win/" target="_blank">How To Claim</a></h3>
-            <p>What is it?</p>
+            <p>HowToClaim.win is a crypto related site that introduces the HEX cryptocurrency to the reader and outlines its unique value proposition as a speculative investment. It then offers simple instructional guides for how they can claim and stake their HEX with their own Ledger Nano S device</p>
+          <h3 class="mb-4"><a href="https://ezteachonline.com/" target="_blank">EZ Teach Online</a></h3>
+            <p>EZTeachOnline.com is not related to crypto, but instead offers guidance for undergoing the application and hiring process with VIPKid, an online educational service for non-English speakers. To offer the best support to new applicants, I created automated email campaigns giving unique advice and recommendations to applicants at different stages of the hiring process. The information in the newsletter increased their chances of being hired and expedited the onboarding process, but also promoted engagement with new content added to the website.</p>
       </div>
     </section>
+
+    <div class="container-fluid fixed-bottom">
+      <div class="row">
+        <div class="col">
+          <a href="#page-top" class="btn btn-primary float-right js-scroll-trigger">Top</a>
+        </div>
+      </div>
+    </div>
 
   </div>
 

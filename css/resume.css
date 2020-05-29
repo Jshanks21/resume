@@ -41,6 +41,15 @@ p.lead {
   font-weight: 400;
 }
 
+ul {
+  display: block;
+}
+
+li {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
